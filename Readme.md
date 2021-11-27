@@ -6,7 +6,7 @@
 
 ## Movie Screen
 
-(./design/MovieScreen.png)
+![Design preview for the Movie with filtering coding challenge](./design/MovieScreen.png)
 
 ## Table of contents
 
