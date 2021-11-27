@@ -30,7 +30,9 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/milimyname/mili-search-movie-app.git
-- Live Site URL: ![Scan to use it in Expo App](./design/Scan to use it in Expo App.png)
+
+Scan it to see the app in Expo app
+![Scan to use it in Expo App](./design/Qr.png)
 
 ## My process
 
