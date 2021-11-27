@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  StyleSheet,
-  Text,
-  View,
-  TouchableOpacity,
-  SafeAreaView,
-  Image,
-} from "react-native";
+import { StyleSheet, Text, View, Image } from "react-native";
 import { Icon } from "react-native-elements";
 import { useSelector } from "react-redux";
 
