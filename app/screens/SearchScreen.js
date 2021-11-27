@@ -12,13 +12,13 @@ import {
 import { SearchBar } from "react-native-elements";
 
 /*
- * The Search screen is for search a movie by title.
+ * The Search screen is for search a movie by title and display them.
  */
 
 const SearchScreen = ({ movie }) => {
   return (
-    <SafeAreaView>
-      <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+      <View>
         <Text style={styles.primaryHeading}>
           Find Movies, TV Shows and more...
         </Text>
@@ -40,14 +40,16 @@ const SearchScreen = ({ movie }) => {
           // onChangeText={()=> }
         />
       </View>
+      {/* <View>{movie["Actors"]}</View> */}
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 50,
-    paddingHorizontal: 20,
+    flex: 1,
+    alignItems: "center",
+    marginTop: 80,
   },
   primaryHeading: {
     fontSize: 32,

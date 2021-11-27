@@ -12,6 +12,7 @@ export default function App() {
     );
     const data = await res.json();
     SetMovie(data);
+    console.log(movie["Actors"]);
   }, []);
 
   return <SearchScreen movie={movie} />;
