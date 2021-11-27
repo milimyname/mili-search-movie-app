@@ -1,5 +1,13 @@
 # Mio Health - Movie Challenge
 
+## Home Screen
+
+![Design preview for the Movie with filtering coding challenge](./design/HomeScreen.png)
+
+## Movie Screen
+
+(./design/MovieScreen.png)
+
 ## Table of contents
 
 - [Overview](#overview)
