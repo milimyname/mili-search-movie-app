@@ -82,11 +82,7 @@ const SearchScreen = ({ navigation }) => {
             <Text style={styles.genre}>Genre: {movies[0]["Genre"]}</Text>
             <Text style={styles.actors}>Actors: {movies[0]["Actors"]}</Text>
             <TouchableOpacity
-              onPress={() =>
-                navigation.navigate("Movie", {
-                  name: `${movies["Title"]}`,
-                })
-              }
+              onPress={() => navigation.navigate("Movie")}
               style={styles.btnLearnMore}
             >
               <Text style={styles.textLearnMore}>Learn More</Text>
@@ -142,7 +138,6 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   btnLearnMore: {
-    // flex: 1,
     backgroundColor: "#F39189",
     borderRadius: 10,
     alignSelf: "flex-end",
