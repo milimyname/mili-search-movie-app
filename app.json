@@ -11,7 +11,9 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -20,6 +22,8 @@
         "backgroundColor": "#FFFFFF"
       }
     },
-    "web": {}
+    "web": {},
+    "description": "Movie Filter based its title",
+    "githubUrl": "https://github.com/milimyname/mili-search-movie-app"
   }
 }
