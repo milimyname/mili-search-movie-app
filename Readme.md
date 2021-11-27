@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/milimyname/mili-search-movie-app.git
-- Live Site URL: https://expo.dev/@/projects/mio-health-project
+- Live Site URL: ![Scan to use it in Expo App](./design/Scan to use it in Expo App.png)
 
 ## My process
 
