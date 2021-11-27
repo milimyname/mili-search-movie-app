@@ -1,13 +1,26 @@
-import { StatusBar } from "expo-status-bar";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { NativeRouter, Route, Link } from "react-router-native";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function App() {
+  const [movie, SetMovie] = useState();
+
+  // Just check how to fetch a data from the API
+  useEffect(async () => {
+    const res = await fetch(
+      `http://www.omdbapi.com/?apikey=a2a1ab79&t=harry-potter`
+    );
+    const data = await res.json();
+    SetMovie(data);
+  }, []);
+
   return (
-    <View style={styles.container}>
-      <Text>Hello World!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NativeRouter>
+      <View style={styles.container}>
+        <Text>{movie["Actors"]}</Text>
+      </View>
+      {/* <Route exact path="/" component={Home} /> */}
+    </NativeRouter>
   );
 }
 
