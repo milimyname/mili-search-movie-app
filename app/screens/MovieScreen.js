@@ -10,7 +10,6 @@ import { useSelector } from "react-redux";
 
 const MovieScreen = ({ navigation }) => {
   const [movie] = useSelector((state) => state.movie.movies);
-  console.log(movie);
   return (
     <View style={styles.movieContainer}>
       <View style={styles.moviePlay}>
