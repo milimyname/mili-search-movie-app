@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { NativeRouter, Route, Link } from "react-router-native";
 import { StyleSheet, Text, View } from "react-native";
+import SearchScreen from "./app/screens/SearchScreen";
 
 export default function App() {
   const [movie, SetMovie] = useState();
@@ -14,21 +14,5 @@ export default function App() {
     SetMovie(data);
   }, []);
 
-  return (
-    <NativeRouter>
-      <View style={styles.container}>
-        <Text>{movie["Actors"]}</Text>
-      </View>
-      {/* <Route exact path="/" component={Home} /> */}
-    </NativeRouter>
-  );
+  return <SearchScreen movie={movie} />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
