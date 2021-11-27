@@ -1,21 +1,28 @@
 import React, { useEffect, useState } from "react";
-import { NativeRouter, Route, Link } from "react-router-native";
 import {
   StyleSheet,
   Text,
   View,
-  TextInput,
-  ScrollView,
   TouchableOpacity,
   SafeAreaView,
 } from "react-native";
 import { SearchBar } from "react-native-elements";
 
+
 /*
  * The Search screen is for search a movie by title and display them.
  */
 
-const SearchScreen = ({ movie }) => {
+const SearchScreen = ({ navigation }) => {
+  // Just check how to fetch a data from the API
+  useEffect(async () => {
+    const res = await fetch(
+      `http://www.omdbapi.com/?apikey=a2a1ab79&t=harry-potter`
+    );
+    const data = await res.json();
+    SetMovie(data);
+    console.log(movie["Actors"]);
+  }, []);
   return (
     <SafeAreaView style={styles.container}>
       <View>
@@ -40,7 +47,7 @@ const SearchScreen = ({ movie }) => {
           // onChangeText={()=> }
         />
       </View>
-      {/* <View>{movie["Actors"]}</View> */}
+      {/* <Text>{movie["Actors"]}</Text> */}
     </SafeAreaView>
   );
 };
@@ -49,7 +56,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
-    marginTop: 80,
+    marginTop: 60,
   },
   primaryHeading: {
     fontSize: 32,
