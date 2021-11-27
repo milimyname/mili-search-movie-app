@@ -53,7 +53,7 @@ const SearchScreen = ({ navigation }) => {
           clearIcon={{ color: "#ffffff" }}
           inputStyle={{ backgroundColor: "#F39189", color: "#fff" }}
           placeholder="Search a movie..."
-          placeholderTextColor="#BB8082"
+          placeholderTextColor="rgba(0,0,0, .2)"
           onChangeText={(e) => dispatch(addTitle(e))}
           value={title}
         />
